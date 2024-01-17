@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: netflix_font;
+    src: url(/images/NetflixSans-Regular.woff2);
+}
+body{
+    font-family:netflix_font ;
+}
+.nav{
+    top: 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all  0.5s; */
+    /* background-color: #111; */
+    padding: 10px 40px;
+}
+.nav_right{
+    display: flex;
+    right: 30px;
+    position: fixed;
+    margin-right: 10px;
+}
+.nav_logo{
+    height: 90%;
+    width: 100px;
+}
+.nav_avater{
+    height: 60%;
+    width: 30px;
+    border-radius: 50%;
+}
+#banner{
+    color: white;
+    object-fit: contain;
+    height: 644px;
+    background-position: center center;
+    background-size: cover;
+}
+.banner_content{
+    margin-left: 70px;
+    padding-top: 340px;
+    height: 190px;
+}
+#banner_title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+#banner_descpription{
+    width: 45rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    height: 80px;
+    max-width: 360px;
+    padding-top: 20px;
+}
+.banner_buttons{
+    cursor: pointer;
+    outline: none;
+    color: white;
+   background: linear-gradient(
+    rgba(37,37,37,.61),
+    #111
+   );
+    font-weight: 700;
+    border-radius: .2vw;
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    
+}
+.banner_buttons:hover{
+    color: black;
+    background-color:#e6e6e6 ;
+    transition: all 0.3s;
+}
+.row{
+    margin: 20px;
+    color: white;
+}
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-width: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+.row_poster::-webkit-scrollbar{
+    display: none;
+}
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* padding: 20px; */
+    
+}
+.row_poster:hover{
+    transform: scale(1.08);
+}
+.row_posterLarge,.row_posterLarge1,.row_posterLarge2{
+    object-fit: contain;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 10px;
+    transition: transform 500ms;
+    
+}
+.row_posterLarge:hover,.row_posterLarge1:hover,.row_posterLarge2:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+.row_title{
+    color: #111;
+    font-family:netflix_font ;
+}
